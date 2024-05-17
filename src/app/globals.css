@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import '../styles/header.css';
+@import '../styles/style.css';
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+@layer components{
+  body{
+    @apply text-base overflow-x-hidden font-normal;
+    -webkit-text-size-adjust: 100%;
+  }
+  textarea, input[type="text"], input[type="number"], input[type="email"], input[type="tel"], select{
+    @apply block outline-none text-base font-normal text-midnight_text m-0 rounded-[0.375rem] w-full placeholder:text-[#668199];
+  }
+  h1{
+    @apply md:text-50 text-28 font-bold text-midnight_text dark:text-white;
+  }
+  h2{
+    @apply md:text-35 text-24 font-bold text-midnight_text dark:text-white;
+  }
+  h3{
+    @apply md:text-28 text-18 font-bold text-white dark:text-white;
+  }
+  h4{
+    @apply text-24 font-bold text-midnight_text dark:text-white;
+  }
+  h5{
+    @apply text-22 font-medium text-midnight_text dark:text-white;
+  }
+  .container{
+    @apply w-full max-w-[73.1875rem] my-0 mx-auto py-0 sm:px-7 px-5;
+  }
+  .m_icon{
+    @apply inline-block h-[3.8125rem] w-[3.4375rem] bg-no-repeat bg-cover object-cover;
+  }
+  .box_shadow{
+    @apply shadow-[0px_3px_20px_0px_#3B4B68];
+  }
+  .header_shadow{
+    @apply shadow-[0_2px_20px_rgba(0,0,0,0.05)];
+  }
+  section{
+    @apply lg:py-24 py-10;
+  }
+  /* Default Button CSS Start */
+  .btn {
+    @apply relative inline-block border-0 z-[1] sm:py-3 py-2 sm:px-4 px-2 sm:text-17 text-base font-normal cursor-pointer no-underline bg-primary text-white before:content-[''] before:absolute before:-z-[1] after:content-[''] after:absolute after:-z-[1] hover:shadow-[inset_-7.5rem_0_0_0_#102D47,inset_7.5rem_0_0_0_#102D47] dark:hover:shadow-[inset_-7.5rem_0_0_0_#12429A,inset_7.5rem_0_0_0_#12429A];
+    transition: 0.5s;
+  }
+  /* transparent Button CSS Start */
+  .btn_trans {
+    @apply relative inline-block z-[1] py-[0.7rem] px-8 text-18 font-medium cursor-pointer no-underline border-2 border-solid border-primary text-primary before:content-[''] before:absolute before:-z-[1] after:content-[''] after:absolute after:-z-[1] hover:shadow-[inset_-7.5rem_0_0_0_#102D47,inset_7.5rem_0_0_0_#102D47] hover:border-midnight_text hover:text-white hover:border-transparent dark:hover:shadow-[inset_-7.5rem_0_0_0_#12429A,inset_7.5rem_0_0_0_#12429A];
+    transition: 0.5s;
+  }
+}
