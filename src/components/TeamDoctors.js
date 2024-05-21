@@ -1,5 +1,5 @@
 import React from "react";
-import {portfolioinfo} from '../api/data';
+import { portfolioinfo } from "../api/data";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -15,7 +15,7 @@ const TeamDoctors = () => {
           </p>
         </div>
         <div
-          className="flex flex-wrap gap-[2.125rem] lg:px-[2.125rem] px-0 max-w-[120rem] w-full justify-center m-auto pt-[5rem]"
+          className="grid md:grid-cols-12 sm:grid-cols-6 grid-cols-1 gap-[1.875rem] md:pt-20 pt-8"
           data-aos="fade-down"
           data-aos-delay="200"
           data-aos-duration="1000"
@@ -24,9 +24,9 @@ const TeamDoctors = () => {
             <Link
               key={index}
               href={`/portfolio-details/${item.slug}`}
-              className={`w-[18rem] group ${
+              className={`col-span-3 group ${
                 index % 2 !== 0 ? "margin_top" : ""
-              }`}
+              } ${index % 2 === 0 ? "sm:mt-[5.625rem] mt-[0.625rem]" : ""}`}
             >
               <Image
                 src={item.image}
@@ -46,6 +46,9 @@ const TeamDoctors = () => {
               </p>
             </Link>
           ))}
+        </div>
+        <div className="text-center md:pt-24 pt-10">
+          <Link href="javascript:void(0)" className="btn_trans">View More</Link>
         </div>
       </div>
     </section>

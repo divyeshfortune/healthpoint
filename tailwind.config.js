@@ -19,6 +19,9 @@ module.exports = {
         LightPeriwinkle: "#CFE0FF",
         placeholder: "#93B6C3",
         stroke: "#CDE0E7",
+        storke_2:"#4A88FC",
+        footer_stroke: "#EFFBFF",
+        PictonBlue: "#46C4FF",
       },
       screens: {
         sm: "768px",

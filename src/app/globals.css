@@ -28,7 +28,7 @@ html {
     -webkit-text-size-adjust: 100%;
   }
   textarea, input[type="text"], input[type="number"], input[type="email"], input[type="tel"], select{
-    @apply block outline-none text-base font-normal text-midnight_text m-0 rounded-[0.375rem] w-full placeholder:text-[#668199];
+    @apply block outline-none text-base font-normal text-midnight_text m-0 w-full placeholder:text-placeholder;
   }
   h1{
     @apply md:text-50 text-28 font-bold text-midnight_text dark:text-white;
@@ -44,6 +44,9 @@ html {
   }
   h5{
     @apply text-22 font-medium text-midnight_text dark:text-white;
+  }
+  h6{
+    @apply text-18 font-medium text-midnight_text dark:text-white;
   }
   .container{
     @apply w-full max-w-[73.1875rem] my-0 mx-auto py-0 sm:px-7 px-5;
@@ -67,7 +70,7 @@ html {
   }
   /* transparent Button CSS Start */
   .btn_trans {
-    @apply relative inline-block z-[1] py-[0.7rem] px-8 text-18 font-medium cursor-pointer no-underline border-2 border-solid border-primary text-primary before:content-[''] before:absolute before:-z-[1] after:content-[''] after:absolute after:-z-[1] hover:shadow-[inset_-7.5rem_0_0_0_#102D47,inset_7.5rem_0_0_0_#102D47] hover:border-midnight_text hover:text-white hover:border-transparent dark:hover:shadow-[inset_-7.5rem_0_0_0_#12429A,inset_7.5rem_0_0_0_#12429A];
+    @apply relative inline-block z-[1] sm:py-[0.7rem] py-2 sm:px-8 px-4 text-18 font-medium cursor-pointer no-underline border-2 border-solid border-primary text-primary before:content-[''] before:absolute before:-z-[1] after:content-[''] after:absolute after:-z-[1] hover:shadow-[inset_-7.5rem_0_0_0_#102D47,inset_7.5rem_0_0_0_#102D47] hover:border-midnight_text hover:text-white hover:border-transparent dark:hover:shadow-[inset_-7.5rem_0_0_0_#12429A,inset_7.5rem_0_0_0_#12429A];
     transition: 0.5s;
   }
 }

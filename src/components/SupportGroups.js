@@ -27,7 +27,7 @@ const SupportGroups = () => {
                 </div>
             </div>
           </div>
-          <div className="md:col-span-5 col-span-7 md:pl-[4.5625rem] pl-0">
+          <div className="md:col-span-5 col-span-7 lg:pl-[4.5625rem] pl-0">
             <h2>Support Groups for Depression & Anxiety</h2>
             <p className="pt-[1.875rem] pb-[3.1875rem] text-17 font-normal text-SlateBlue">
               Letraset sheets containing Lorem Ipsum passages and more recently
